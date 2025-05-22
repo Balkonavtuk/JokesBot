@@ -39,7 +39,6 @@ public class JokesServiceImpl implements JokesService{
         }
     }
 
-
     public Jokes getJokesById(Long id) {
         Optional<Jokes> jokes = jokesRepository.findById(id);
         if (jokes.isPresent()){

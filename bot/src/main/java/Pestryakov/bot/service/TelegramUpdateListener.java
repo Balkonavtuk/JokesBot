@@ -58,7 +58,7 @@ public class TelegramUpdateListener implements UpdatesListener {
 
                     if (!jokes.isEmpty()) {
                         Jokes joke = jokes.get((int) (Math.random() * jokes.size()));
-                        String text = '"'+ joke.getTitle() + '"' +'.'+ "\n" + joke.getContent();
+                        String text = '"' + joke.getTitle() + '"' + '.' + "\n" + joke.getContent();
                         telegramBot.execute(new SendMessage(update.message().chat().id(), text));
                     }
                 }
